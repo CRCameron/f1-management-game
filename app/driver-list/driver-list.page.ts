@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'driver.template.html'
+    templateUrl: 'driver-list.template.html'
 })
-export class DriverPage {
+export class DriverListPage {
 
 }
