@@ -1,17 +1,19 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RouterModule } from '@angular/router'
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home.page';
-// import { routes } from './app.routing'; //TODO: Create app.routing
+import { AppComponent } from './app.component'
+import { routes } from './app.routing'
+import {DriverModule} from "./driver/driver.module";
 
 @NgModule({
     imports: [
-        BrowserModule
+        BrowserModule,
+        RouterModule.forRoot(routes),
+        DriverModule
     ],
     declarations: [
-        AppComponent,
-        HomeComponent
+        AppComponent
     ],
     providers: [/* TODO: Providers go here */],
     bootstrap: [AppComponent],
