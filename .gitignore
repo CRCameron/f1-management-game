@@ -1,0 +1,16 @@
+._*
+.DS_Store
+ehthumbs.db
+Thumbs.db
+npm-debug.log
+*.swp
+
+**/.sass-cache
+config.json
+
+node_modules
+typings
+/app/**/*.js
+/app/**/*.map
+.idea
+
