@@ -4,5 +4,18 @@ export interface Driver {
     secondName: String,
     dob: Date,
     nationality: String,
-    number: Number
+    number: Number,
+    stats: Stats[]
+}
+
+interface Stats {
+    braking: Number,
+    cornering: Number,
+    smoothness: Number,
+    overtaking: Number,
+    consistency: Number,
+    adaptability: Number,
+    fitness: Number,
+    feedback: Number,
+    focus: Number
 }
