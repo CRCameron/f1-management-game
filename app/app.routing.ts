@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router'
 
-import { DriverPage } from './driver/driver.page'
-import { DriverListPage } from './driver-list/driver-list.page'
+import { MainMenuPage } from './main-menu/main-menu.page'
+import { NewGamePage } from './new-game/new-game.page'
 
 export const routes: Routes = [
-    { path: '', component: DriverListPage },
-    { path: 'drivers', component: DriverListPage },
-    { path: 'drivers/:driverId', component: DriverPage }
+    { path: '', component: MainMenuPage },
+    { path: 'new-game', component: NewGamePage }
 ]

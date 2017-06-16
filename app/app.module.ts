@@ -4,8 +4,8 @@ import { RouterModule } from '@angular/router'
 
 import { AppComponent } from './app.component'
 
-import { DriverModule } from './driver/driver.module'
-import { DriverListModule } from './driver-list/driver-list.module'
+import { MainMenuModule } from './main-menu/main-menu.module'
+import { NewGameModule } from './new-game/new-game.module'
 
 import { routes } from './app.routing'
 
@@ -13,8 +13,8 @@ import { routes } from './app.routing'
     imports: [
         BrowserModule,
         RouterModule.forRoot(routes),
-        DriverModule,
-        DriverListModule
+        MainMenuModule,
+        NewGameModule
     ],
     declarations: [
         AppComponent
