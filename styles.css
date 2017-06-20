@@ -2,5 +2,18 @@ body {
     background-image: url('assets/images/background.jpg');
     background-position-x: center;
     background-repeat:no-repeat;
+    font-weight: 300;
+}
+
+h1 {
     color: #fff;
+}
+
+.card-panel {
+    background-color: rgba(256,256,256,0.9);
+}
+
+.card-panel > h2 {
+    margin-top: 0;
+    font-size: 32px;
 }

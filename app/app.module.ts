@@ -12,7 +12,7 @@ import { routes } from './app.routing'
 @NgModule({
     imports: [
         BrowserModule,
-        RouterModule.forRoot(routes),
+        RouterModule.forRoot(routes, { useHash: true }),
         MainMenuModule,
         NewGameModule
     ],
