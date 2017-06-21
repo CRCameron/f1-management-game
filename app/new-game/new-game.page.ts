@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../shared/api-service/api.service'
 
 import { Team } from '../models/team.model'
+import {FormGroup} from "@angular/forms";
 
 declare const $: any;
 
@@ -10,7 +11,7 @@ declare const $: any;
     moduleId: module.id,
     templateUrl: 'new-game.template.html'
 })
-export class NewGamePage implements OnInit{
+export class NewGamePage implements OnInit{ //TODO: Add form validation
     teams: Team[] = []
 
     constructor(private apiService: ApiService) {}
@@ -26,11 +27,9 @@ export class NewGamePage implements OnInit{
                 }
             })
         })
+    }
 
-
-        $('.datepicker').pickadate({
-            selectMonths: true,
-            selectYears: 15
-        });
+    startGame(formData: FormGroup) {
+        console.log(formData)
     }
 }
